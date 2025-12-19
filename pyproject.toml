@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "business_simulation"
+version = "0.1.0"
+description = "MCP tools for ERPNext business simulation and AI-powered operations"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Organization", email = "info@example.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Framework :: Frappe",
+    "Topic :: Office/Business :: Enterprise Resource Planning (ERP)",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["frappe", "erpnext", "mcp", "ai", "business-simulation"]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/business_simulation"
+Repository = "https://github.com/your-org/business_simulation.git"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["business_simulation*"]
+
+[tool.setuptools.package-data]
+business_simulation = [
+    "templates/*.html",
+    "public/**/*",
+    "*.json",
+    "**/*.json",
+]
