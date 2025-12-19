@@ -7,7 +7,7 @@ app_license = "MIT"
 app_version = "0.1.0"
 
 # Required Apps
-required_apps = ["frappe", "frappe_assistant_core"]
+required_apps = ["frappe"]
 
 # Includes in <head>
 # ------------------
